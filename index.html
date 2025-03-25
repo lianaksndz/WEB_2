@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтерактивна гра</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Міні-Гра на Canvas</h1>
+
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <div id="controls">
+        <button id="startButton">Почати гру</button>
+        <button id="endButton" style="display: none;">Завершити гру</button>
+        <p>Очки: <span id="score">0</span></p>
+        <div id="movementControls">
+            <button id="moveLeft">Ліворуч</button>
+            <button id="moveRight">Праворуч</button>
+        </div>
+    </div>
+
+    <div id="result"></div>
+    <button onclick="downloadResults()">Завантажити результати</button>
+
+    <script>
+        function downloadResults() {
+            window.location.href = "/download-results";
+        }
+    </script>
+
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>

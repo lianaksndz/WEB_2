@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('fon.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+canvas {
+    border: 2px solid #ffffff;
+}
+
+button {
+    background: linear-gradient(to right, #ff7eb9, #ff758c, #ff6a6a);
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 118, 136, 0.4);
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 118, 136, 0.6);
+    background: linear-gradient(to right, #ff6a6a, #ff758c, #ff7eb9);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 10px rgba(255, 118, 136, 0.5);
+    background: linear-gradient(to right, #ff5a5a, #ff6a6a, #ff7eb9);
+}
+
+#score {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#movementControls {
+    margin-top: 20px;
+}
+
+#movementControls button {
+    font-size: 1em;
+    margin: 0 10px;
+    padding: 10px 20px;
+}
